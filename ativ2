@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+echo "digite um numero"
+read num1
+
+echo "digite outro numero"
+read num2
+
+echo "1 soma"
+
+echo "2 subtrai"
+
+echo "3 multiplicação "
+
+echo "4 divisao"
+
+read escolha
+
+ if [ $escolha == 1 ]; then
+res=$((num1 + num2))
+echo "o resultado da soma eh" $res
+elif [ $escolha == 2 ]; then
+res2=$[ num1 - num2 ]
+echo " o resultado da subtração eh " $res2
+elif [ $escolha == 3 ]; then
+res3=$[ num1 * num2 ]
+echo " o resultado da multiplicação eh " $res3
+elif [ $escolha == 4 ]; then
+res4=$[ num1 / num2 ] 
+echo " o resultado da divisao eh " $res4
+fi
